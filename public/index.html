@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <title>6210110107-Hibernate and Thinking</title>
+    <!-- Bootstrap CSS -->
+    <link href="res/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <!-- CSS -->
+    <link href="css/style.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Kanit:wght@300&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+    
+    <a id="back-to-top" href="#" class="btn btn-primary btn-lg back-to-top" role="button">🤘<i
+            class="fas fa-chevron-up"></i></a>
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
+        <div class="container">
+            <a class="navbar-brand" href="#">HBN&THK</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive"
+                aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarResponsive">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="./index.html">หน้าแรก
+                            <span class="sr-only">(current)</span>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./jsd.html">อธิบาย JS</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Header -->
+    <header id="header1">
+        <div class="overlay"></div>
+        <video playsinline="playsinline" autoplay="autoplay" muted="muted" loop="loop">
+            <source src="res/videos/header_videos.mp4" type="video/mp4">
+        </video>
+        <div class="container h-100">
+            <div class="d-flex h-100 text-center align-items-center">
+                <div class="w-100 text-white">
+                    <h1 class="display-1">แมว</h1>
+                    <p class="lead mb-2">นาม. [มอ-แอ-วอ-แมว]</p>
+                    <p class="lead mb-0">ชื่อวิทยาศาสตร์: Felis catus เป็นสัตว์เลี้ยงลูกด้วยนม อยู่ในตระกูล Felidae</p>
+                    <a href="https://th.wikipedia.org/wiki/%E0%B9%81%E0%B8%A1%E0%B8%A7" target="_blank" class="btn btn-primary btn-lg m-5" role="button">ดูเพิ่มเติม</a>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Page Content -->
+    <div class="container">
+
+        <div class="row">
+            <div class="col-md-6 mb-5">
+                <h2>จะเลี้ยงแมวต้องรู้</h2>
+                <hr>
+                <p>เนื้อหาจาก LMS2 ในรายวิชาสัตว์เลี้ยงเพื่อนรัก</p>
+                <ul>
+                    <li>รู้จัก "แมว"</li>
+                    <li>ข้อคิดก่อนจะเลี้ยงแมว</li>
+                    <li>พันธุ์แมว</li>
+                    <li>วงจรชีวิตแมว</li>
+                    <li>ลักษณะนิสัยและพฤติกรรมทั่วไป</li>
+                    <li>การปฐมพยาบาลแมว</li>
+                    <li>การเลือกซื้ออาหารแมว</li>
+                </ul>
+            </div>
+            <div class="col-md-6 mb-5">
+                <h2>Easter egg
+                    <a href="jsd.html" target="_blank" class="btn btn-primary">{code}</a>
+                </h2>
+                <hr>
+                <button class="btn btn-primary btn-lg btn-block" onclick="generateRandomNumber();">สุ่มอารมณ์ต้าวเหมียว</button>
+                <div id="display">SLEEP</div>
+            </div>
+        </div>
+        <!-- /.row -->
+        <h2>บทความ</h2>
+        <hr>
+        <div class="row">
+            <div class="col-md-4 mb-5">
+                <div class="card h-100">
+                    <img class="card-img-top" src="./res/img/cat_morning.jpg" alt="">
+                    <div class="card-body">
+                        <h4 class="card-title">รู้จักพันธุ์แมว</h4>
+                        <p class="card-text">10 ที่สุดของสายพันธุ์ที่มีความนิยมเลี้ยงกันมากที่สุด และสายพันธุ์ผสมแมวบ้านกับแมวป่า (อ่านเพิ่มเติมใน PDF)</p>
+                    </div>
+                    <div class="card-footer">
+                        <a href="https://lms2.psu.ac.th/pluginfile.php/355734/mod_resource/content/3/28%2001%2063%20Slide%20cat%201.pdf" target="_blank" class="btn btn-primary">ดูเพิ่มเติม</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 mb-5">
+                <div class="card h-100">
+                    <img class="card-img-top" src="./res/img/regular.jpg" alt="">
+                    <div class="card-body">
+                        <h4 class="card-title">การเลือกซื้ออาหารแมว</h4>
+                        <p class="card-text">เพื่อให้น้องแมวเติบโตได้อย่างสมวัย ได้รับโภชนาการครบถ้วนตามแต่ละช่วงวัย ตามไปดูกันว่า อาหารแมวที่เหมาะกับน้องแมวแต่ละช่วงวัย ควรเป็นแบบไหน</p>
+                    </div>
+                    <div class="card-footer">
+                        <a href="https://lms2.psu.ac.th/pluginfile.php/355734/mod_resource/content/3/28%2001%2063%20Slide%20cat%201.pdf" target="_blank" class="btn btn-primary">ดูเพิ่มเติม</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 mb-5">
+                <div class="card h-100">
+                    <img class="card-img-top" src="./res/img/cat-first-aid.jpg" alt="">
+                    <div class="card-body">
+                        <h4 class="card-title">การปฐมพยาบาลแมว</h4>
+                        <p class="card-text">หากคุณพบแมวบาดเจ็บหรือต้องการความช่วยเหลือจากเหตุฉุกเฉิน คุณจะต้องรวบรวมสติและคิดอย่างรอบคอบ (อ่านเพิ่มเติมใน PDF)</p>
+                    </div>
+                    <div class="card-footer">
+                        <a href="https://lms2.psu.ac.th/pluginfile.php/355734/mod_resource/content/3/28%2001%2063%20Slide%20cat%201.pdf" target="_blank" class="btn btn-primary">ดูเพิ่มเติม</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Responsive Webpage Info Section  -->
+
+        <div class="bg-primary py-5 text-center m-5">
+            <h3 class="text-white">“Meow” means “woof” in cat.”</h3>
+            <p class="mb-0 text-white">― George Carlin</p>
+        </div>
+
+
+        
+    </div>
+
+
+    <!-- /.container -->
+
+    <!-- Footer -->
+    <footer class="py-5 bg-dark">
+        <div class="container">
+            <p class="m-0 text-center text-white">6210110107 (SECTION 02)<br>COMP ENG LAB SOFTARE<br>2SA08</p>
+        </div>
+        <!-- /.container -->
+    </footer>
+
+    <!-- Bootstrap core JavaScript -->
+    <script src="res/jquery/jquery.min.js"></script>
+    <script src="res/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="js/btt.js"></script>
+    <script src="js/rand_emo.js"></script>
+</body>
+
+</html>
