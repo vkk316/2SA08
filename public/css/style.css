@@ -72,17 +72,12 @@ body {
   }
 
 .back-to-top {
-  cursor: pointer;
   position: fixed;
   bottom: 25px;
   right: 25px;
   display: none;
 }
 #display {
-  font-size: 100px;
+  font-size: 20vmin;
   background: rgba(255,255,255,.3);
-  border-radius: 15px;
-  margin: 20px auto 0px auto;
-  width: 50%;
-  text-align: center;
  }
