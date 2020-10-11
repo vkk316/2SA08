@@ -71,14 +71,8 @@ body {
     z-index: 1;
   }
 
-  .back-to-top {
-    position: fixed;
-    bottom: 25px;
-    right: 25px;
-    display: none;
-}
-
 .back-to-top {
+  cursor: pointer;
   position: fixed;
   bottom: 25px;
   right: 25px;
