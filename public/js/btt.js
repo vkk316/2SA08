@@ -1,3 +1,5 @@
+//Thank for Codepen  : url: https://codepen.io/michalwyrwa/pen/GBaPPj
+
 $(document).ready(function(){
 	$(window).scroll(function () {
 			if ($(this).scrollTop() > 50) {

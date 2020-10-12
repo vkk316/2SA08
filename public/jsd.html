@@ -14,7 +14,7 @@
   <link href="res/bootstrap/css/bootstrap.min.css" rel="stylesheet">
 
   <!-- CSS -->
-  <link href="css/style.css" rel="stylesheet">
+  <link href="css/styles.css" rel="stylesheet">
 
   <link href="https://fonts.googleapis.com/css2?family=Kanit:wght@300&display=swap" rel="stylesheet">
 
@@ -67,30 +67,88 @@
           <button class="btn btn-primary btn-lg">🤘</button>
         </h2>
         <hr>
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. A deserunt neque tempore recusandae animi soluta
-          quasi? Asperiores rem dolore eaque vel, porro, soluta unde debitis aliquam laboriosam. Repellat explicabo,
-          maiores!</p>
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Omnis optio neque consectetur consequatur magni in
-          nisi, natus beatae quidem quam odit commodi ducimus totam eum, alias, adipisci nesciunt voluptate. Voluptatum.
-        </p>
-        <a class="btn btn-outline-primary" href="#">หลอกๆๆ &raquo;</a>
+        <p>ในขณะที่ผู้ใช้กำลังใช้งานเว็บเพจที่ต่ำแหน่งบนสุดของเว็บ (Header) ปุ่มจะถูกซ่อนไว้
+          แต่เมื่อผู้ใช้เลื่อนหน้าเว็บเพจลงจนถึงตำแหน่งทีกำหนดไว้ เว็บเพจจะแสดงปุ่มกลับไปที่ด้านบนสุดของเว็บเพจ</p>
+        <div class="row">
+          <div class="col-md-6 mb-5">
+            <div class="card h-70">
+              <div class="card-body">
+                <h4 class="card-title">HTML</h4>
+                <img class="card-img-top mb-2" src="./res/img/htm1.png" alt="">
+                <p class="card-text"> ใช้ tag a ที่มี id="back-to-top" เพื่อเป็น selector สำหรับ Javascript</p>
+              </div>
+              <div class="card-footer">
+                <a href="https://github.com/vkk316/2SA08/blob/master/public/index.html"
+                  target="_blank" class="btn btn-primary">Source Code</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6 mb-5">
+            <div class="card h-100">
+              <div class="card-body">
+                <h4 class="card-title">Javascript</h4>
+                <img class="card-img-top mb-2" src="./res/img/js1.png" alt="">
+                <p class="card-text">นำ id="back-to-top" เป็นเงื่อนไข การทำงานของพังก์ชัน jQuery Manipulation กับ
+                  .scrollTop() ในการกำหนดความสูงของ Scollbar ว่ามีความสูงเท่าไหร่ถึงจะขึ้น Scollbar</p>
+              </div>
+              <div class="card-footer">
+                <a href="https://github.com/vkk316/2SA08/blob/master/public/js/btt.js"
+                  target="_blank" class="btn btn-primary">Source Code</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-12 mb-5">
+        <h2>การทำงานของ Easter egg 😹 </h2>
+        <hr>
+        <p>เมือ่ผู้ใช้กดปุ่ม "สุ่มอารมณ์ต้าวเหมียว" จากเดิมที่แสดงข้อความ SLEEP จะถูกเขียนทับด้วยอิโมจิ
+          ที่ได้จากการสุ่มใน Javascript</p>
+        <div class="row">
+          <div class="col-md-6 mb-5">
+            <div class="card h-70">
+              <div class="card-body">
+                <h4 class="card-title">HTML</h4>
+                <img class="card-img-top mb-2" src="./res/img/htm2.png" alt="">
+                <p class="card-text"> เรียกใช้ javascript event onclick (เมื่อคลิ๊กปุ่ม) จาก html ซึ่งฟังก์ชันของ
+                  javascript ที่ถูกเรียกใช้คือ generateRandomNumber(); และแสดงผลการ สุ่มอิโมจิที่ tag div ที่มี id
+                  เรียกว่า "display" </p>
+              </div>
+              <div class="card-footer">
+                <a href="https://github.com/vkk316/2SA08/blob/master/public/index.html"
+                  target="_blank" class="btn btn-primary">Source Code</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6 mb-5">
+            <div class="card h-100">
+              <div class="card-body">
+                <h4 class="card-title">Javascript</h4>
+                <img class="card-img-top mb-2" src="./res/img/js2.png" alt="">
+                <p class="card-text">ตัวแปร emo เป็น Array of charector ที่เก็บ emoji จำนวน 13 ตัว ทุกครั้งที่ฟังก์ชัน generateRandomNumber ถูกเรียก ค่า Index ของ array จะถูกสุ่มทุกครั้ง
+                  จากนั้นค่าของ index ที่ถูกสุ่มจะแสดงผลโดย การเข้าถึง Element id คือ "display" เพื่อเขรยนทับค่าเดิมก่อนหน้านี้<br></p>
+              </div>
+              <div class="card-footer">
+                <a href="https://github.com/vkk316/2SA08/blob/master/public/js/rand_emo.js"
+                  target="_blank" class="btn btn-primary">Source Code</a>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
 
   </div>
   <!-- /.container -->
 
- <!-- Footer -->
- <footer class="py-5 bg-dark">
-  <div class="container">
-      <p class="m-0 text-center text-white">Nuttanai Yaprajan :: 6210110107 (SECTION 02)<br>COMP ENG LAB SOFTARE<br>2SA08</p>
-      <p class="m-0 text-right text-white">
-         <a class="text-white" href="https://github.com/vkk316/2SA08/tree/master/public">Source Code (CLICK->HERE)</a> 
-      </p>
-      
-  </div>
-  <!-- /.container -->
-</footer>
+  <!-- Footer -->
+  <footer class="py-5 bg-dark">
+    <div class="container">
+      <p class="m-0 text-center text-white">Nuttanai Yaprajan :: 6210110107 (SECTION 02)<br>COMP ENG LAB
+        SOFTARE<br>2SA08</p>
+    </div>
+    <!-- /.container -->
+  </footer>
   <!-- Bootstrap core JavaScript -->
   <script src="res/jquery/jquery.min.js"></script>
   <script src="res/bootstrap/js/bootstrap.bundle.min.js"></script>
